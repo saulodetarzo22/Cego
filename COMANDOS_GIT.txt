@@ -1,0 +1,35 @@
+git config --global user.email "tu@email.com"
+//Coloca su mail en los parametros de configuracion
+git config --global user.name "Tu Nombre"
+//colocar tu nombre en los parametros de configuracion (Tambien se puede cambiar
+este prametro con este comando
+Git config -l
+// permite ver los parametros de configuracion de git
+Git init
+//inicia el trabajo de git
+git add .
+//adjunta todos los archivos en la carpeta de directorio
+git commit -am “Comentario de referencia”
+//guarda en el bd los cambio a los archivos
+git status
+// muestra el estado de los archivos que están en el área de trabajo
+git log
+// permite ver los cambio a los archivos
+git log --stat
+// permite ver los cambio a los archivos ampliado informacion en bit trabajados
+git reset “commit que queremos ver” –hard (se borra lo que hay en stagin)
+//permite regresar a una version anterior del archivo pero se pierde todo lo que haya
+ cambiado
+git reset “commit que queremos ver” –soft (se mantiene lo que hay en stagin)
+//permite regresar a una version anterior del archivo pero se mantiene todo lo que
+ haya cambiado
+git show
+// permite ver en que rama se encuentra ademas de muchas cosas mas
+git diff “commit a” + “commit b”
+// permite comparar los cambios de las imagenes a los largo del tiempo
+git diff
+// permite ver los cambio de la imagen con la que hay actualmente en disco duro
+ local
+git rm –cached :
+// Elimina los archivos del área de Staging y del próximo commit pero los mantiene
+ en nuestro disco duro
